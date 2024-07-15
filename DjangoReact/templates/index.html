@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Project{% endblock %}</title>
+    {% block head %}
+    <link rel="stylesheet" href="{% static 'assets/main-DiwrgTda.css' %}">
+    {% endblock %}
+</head>
+<body>
+    <div id="root"></div>
+    {% block content %}{% endblock %}
+    <script type="module" src="{% static 'assets/main-C8ZBo00U.js' %}"></script>
+</body>
+</html>
